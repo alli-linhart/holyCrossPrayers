@@ -1,0 +1,10 @@
+[
+  {
+    "title": "Our Father",
+    "prayer": ["Our Father, who art in heaven,\nhallowed be thy name;\nthy kingdom come,\nthy will be done\non earth as it is in heaven.\nGive us this day our daily bread,\nand forgive us our trespasses,\nas we forgive those who trespass against us;\n and lead us not into temptation,\nbut deliver us from evil.\n\nAmen."]
+  },
+  {
+    "title":"Hail Mary",
+    "prayer":["Hail, Mary, full of grace,\nthe Lord is with thee.\nBlessed art thou among women\nand blessed is the fruit of thy womb, Jesus.\nHoly Mary, Mother of God,\npray for us sinners,\nnow and at the hour of our death.\n\nAmen."]
+  }
+]
