@@ -1,9 +1,9 @@
-import { Button, Text, View } from 'react-native';
-export default function Home({ navigation }) {
+import React from 'react';
+import RootNavigator from '../navigation/RootNavigator.js';
+
+export default function HomeScreen() {
   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Home Screen</Text>
-      <Button title="Open Drawer" onPress={() => navigation.DrawerNavigator()} />
-    </View>
+
+    <RootNavigator/>
   );
 }
