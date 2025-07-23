@@ -2,62 +2,11 @@
 import React, { useState } from 'react';
 import { FlatList, LayoutAnimation, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
-import prayers from '../assets/prayers/holyCrossPrayers.json';
+// import prayers from '../assets/prayers/saintPrayers.json';
 // const Fuse = FuseImport.default;
-
-
+import prayers from '../assets/prayers/catholicSaintPrayers.json';
 
 export default function HCPrayers() {
-
-  // const [expandedPrayerIndex, setExpandedPrayerIndex] = useState(null);
-  // const [searchQuery, setSearchQuery] = useState ('');
-  
-  // // const fuse = useMemo(() => new Fuse (holyCrossPrayers, {
-  // // keys: ['title'],
-  // // threshold: 0.3,
-  // // }), []);
-
-  // // const filteredPrayers = useMemo(() => {
-  // //   if (!searchQuery) return holyCrossPrayers;
-  // //   const result = fuse.search(searchQuery);
-  // //   return result.map(r => r.item);
-  // // }, [searchQuery]);
-
-  // // const filteredPrayers = prayersData.filter(prayer =>
-  // //   prayer.title.toLowerCase().includes(search.toLowerCase())
-  // // );
-
-  // const toggleExpand = index => {
-  //   LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut);
-  //   setExpandedPrayerIndex(expandedPrayerIndex === index ? null : index);
-  // };
-
-  // const renderItem = ({ item, index }) => {
-  //   const isExpanded = index === expandedPrayerIndex;
-
-  //   return (
-  //     <View style={styles.prayerContainer}>
-
-  //     </View>
-  //   );
-  // };
-
-  // return (
-  //   <ScrollView style={styles.container}>
-  //     {/* <TextInput
-  //       style={styles.searchBar}
-  //       placeholder="Search Prayers..."
-  //       value={searchQuery}
-  //       onChangeText={setSearchQuery}
-  //     />
-  //     <FlatList
-  //       data={filteredPrayers}
-  //       renderItem={renderItem}
-  //       keyExtractor={(item, index) => index.toString()}
-  //       scrollEnabled={false} // since we are inside ScrollView
-  //     /> */}
-  //   </ScrollView>
-  // );
 
   const [expandedIndex, setExpandedIndex] = useState(null);
 
@@ -96,21 +45,19 @@ export default function HCPrayers() {
       </View>
     </View>
   );
-
-
 }
 
 const styles = StyleSheet.create({
   container: {
-    padding: 10,
     backgroundColor: '#f4f3ef',
+    padding: 10,
   },
   altContainer:{
     // padding: 10,
     // borderWidth: 5,
     // borderRadius: 30,
     borderColor: '#bcccac',
-  },  
+  },
   searchBar: {
     borderWidth: 1,
     borderColor: '#ccc',
@@ -125,10 +72,13 @@ const styles = StyleSheet.create({
     borderColor: '#bcccac',
     borderRadius: 8,
     padding: 10,
+    // backgroundColor: '#fcfbf4'
   },
   prayerTitle: {
     fontSize: 20,
     fontWeight: 'bold',
+    // fontFamily: 'warbler-display',
+    fontFamily:'HaloHandletter',
     color: '#949464',
   },
   detailsContainer: {

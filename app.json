@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "holyCrossPrayers",
+    "name": "Prayers for Your Day",
     "slug": "holyCrossPrayers",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -12,12 +12,14 @@
       "supportsTablet": true,
       "bundleIdentifier": "com.alli-linhart.holyCrossPrayers"
     },
+    "assetBundlePatterns": ["**/*"],
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/prayerHands.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.allilinhart.holyCrossPrayers"
     },
     "web": {
       "bundler": "metro",
