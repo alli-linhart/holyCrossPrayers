@@ -1,7 +1,5 @@
-import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import React from 'react';
-
 import HCPrayers from '../screens/HCPrayers.js';
 import HomeScreen from '../screens/HomeScreen.js';
 import SaintPrayers from '../screens/SaintPrayers.js';
@@ -15,11 +13,11 @@ const DrawerNavigator = () => {
       <Drawer.Screen 
         name="Home" 
         component={HomeScreen} 
-        options ={{
-          tabBarIcon : ({focused}) => (
-            <MaterialCommunityIcons name= "home" size = {60}/>
-          ),
-        }}
+        // options={{
+        //   drawerIcon: ({ color }) => (
+        //     <Ionicons name="menu" size={28} color={"red"} />
+        //   ),
+        // }}
         />
       <Drawer.Screen name="Saint Prayers" component={SaintPrayers} />
       <Drawer.Screen name="Holy Cross Prayers" component={HCPrayers} />

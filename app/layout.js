@@ -1,3 +1,4 @@
+import { Ionicons } from '@expo/vector-icons';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import React from 'react';
 import HCPrayers from '../screens/HCPrayers.js';
@@ -10,8 +11,8 @@ const Drawer = createDrawerNavigator();
 const DrawerNavigator = () => {
   return (
     <Drawer.Navigator initialRouteName='Home'>
-      <Drawer.Screen name="Home" component={HomeScreen} />
-      <Drawer.Screen name="Saint Prayers" component={SaintPrayers} />
+      <Drawer.Screen name="Home" component={HomeScreen}> <Ionicons name="menu" size={28} color="#000" /> </Drawer.Screen>
+      <Drawer.Screen name="Saint Prayers" component={SaintPrayers}> <Ionicons name="home" size={28} color="#000" /> </Drawer.Screen>
       <Drawer.Screen name="Holy Cross Prayers" component={HCPrayers} />
       <Drawer.Screen name="Standard Prayers" component={StandardPrayers} />
     </Drawer.Navigator>

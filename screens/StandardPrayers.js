@@ -50,8 +50,14 @@ export default function HCPrayers() {
 
 const styles = StyleSheet.create({
   container: {
-    padding: 20,
-    backgroundColor: '#fff',
+    backgroundColor: '#f4f3ef',
+    padding: 10,
+  },
+  altContainer:{
+    // padding: 10,
+    // borderWidth: 5,
+    // borderRadius: 30,
+    borderColor: '#bcccac',
   },
   searchBar: {
     borderWidth: 1,
@@ -62,15 +68,19 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   prayerContainer: {
-    marginBottom: 20,
-    borderBottomWidth: 1,
-    borderColor: '#eee',
-    paddingBottom: 10,
+    marginVertical: 3,
+    borderWidth: 2,
+    borderColor: '#bcccac',
+    borderRadius: 8,
+    padding: 10,
+    // backgroundColor: '#fcfbf4'
   },
   prayerTitle: {
     fontSize: 20,
     fontWeight: 'bold',
-    color: '#4A4A4A',
+    // fontFamily: 'warbler-display',
+    fontFamily:'HaloHandletter',
+    color: '#949464',
   },
   detailsContainer: {
     marginTop: 10,
@@ -81,10 +91,12 @@ const styles = StyleSheet.create({
     marginBottom: 5,
     fontSize: 16,
   },
-  ingredient: {
-    fontSize: 14,
-    marginLeft: 10,
+  prayerText: {
+    fontSize: 15,
+    marginHorizontal: 10,
+    marginTop: 10,
     marginBottom: 2,
+    color: '#7b4b09',
   },
   instructions: {
     fontSize: 14,
